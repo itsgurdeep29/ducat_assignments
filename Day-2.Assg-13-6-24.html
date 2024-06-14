@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>Introduction To HTML, And Text Element</title>
+
+<head>
+    <h1>Introduction To HTML, And Text Element</h1>
+    <h2>DEFINE TAGS:</h2>
+    <h3>Tags Name:-</h3>
+</head>
+
+<body>
+    <p><b>1.b Element:-</b>The b tag is used to make text bold. It doesn't carry any semantic meaning on its own; it's
+        just a presentational element. When you enclose text within and tags, the text becomes visually bold on the
+        webpage.</p>
+    <p><b>Example:-</b><br>
+        <li>This is normal text - <b>And This is bold text.</li></b>
+    </p>
+
+    <textarea cols="50" rows="1" readonly>
+        <b>This is how to use b tag</b>
+    </textarea>
+    <p><b>2. i Element:-</b>The i tag defines a part of text in an alternate voice or mood. The content inside is
+        typically displayed in italic,The i tag is often used to indicate a technical term, a phrase from another
+        language, a thought, a ship name, etc.Use the i element only when there is not a more appropriate semantic
+        element, such as:</p>
+    <li>em (emphasized text)</li>
+    <li>Strong (important text)</li>
+    <li>mark (marked/highlighted text)</li>
+    <li>cite (the title of a work)</li>
+    <li>dfn (a definition term)</li>
+    <p><b>Example:-</b><br>
+        <li>This is normal text - <i>And This is Italic text.</li></i>
+    </p>
+    <textarea cols="50" rows="1" readonly>
+        <i>This is how to use i tag</i>
+    </textarea>
+    <p><b>3. u Element:-</b>The u tag represents some text that is unarticulated and styled differently from normal
+        text, such as misspelled words or proper names in Chinese text. The content inside is typically displayed with
+        an underline.<b>OR:You can change this with CSS to: Missplled</b></p>
+    <p><b>Example:-</b><br><u>
+            <li>Some underlined text
+        </u></p>
+        <textarea cols="50" rows="1" readonly>
+            <u>This is how to use u tag</u>
+        </textarea>
+    <style>
+        .spelling-error {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: rgb(47, 0, 255);
+        }
+    </style>
+    </head>
+
+    <body>
+        <h4>
+            <li>The u element + CSS:-
+        </h4>
+        <p>
+            <li>This is some <u class="spelling-error"><b>misspelled</b></u> text.
+        </p>
+        <p><b>4. Select Element:-</b>The select element is used to create a drop-down list, this element is most often
+            used in a form, to collect user input.The id attribute is needed to associate the drop-down list with a
+            label. </p>
+        <p><b>Example:-</b>
+        <h4>
+            <p>
+                <li>The select element is used to create a drop-down list.
+            </p>
+        </h4>
+
+        <form action="/action_page.php">
+            <label for="cars">Choose a Language:</label>
+            <select name="cars" id="cars">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+                <option value="NODE">NODE</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form><br>
+        <textarea cols="50" rows="10" readonly>
+<select>This is how to use select tag,
+<form action="/action_page.php">
+    <label for="cars">Choose a Language:</label>
+    <select name="cars" id="cars">
+    <option value="HTML">HTML</option>
+    <option value="CSS">CSS</option>
+    <option value="JS">JS</option>
+    <option value="NODE">NODE</option>
+    </select>    
+    </textarea>
+        <p><b>5. button Element:-</b>The button tag defines a clickable button,Inside a button element you can put text
+            (and tags like i, b, strong, br, img, etc.). That is not possible with a button created with the input
+            element. Always specify the type attribute for a button element, to tell browsers what type of button it is
+            <b> OR:You can easily style buttons with CSS! Look.</b>
+        <p><b>Example:-</b>
+        <h4>
+            <li> button Element
+        </h4>
+        <button type="button">Click Me!</button><br><br>
+<textarea cols="50" rows="1" readonly>
+   <button>This is how to use button tag </button>
+</textarea>
+        <h4>
+            <li>The button element + CSS:-
+        </h4>
+        <style>
+            .button {
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+
+            .button1 {
+                background-color: #04AA6D;
+            }
+
+            /* Green */
+            .button2 {
+                background-color: #008CBA;
+            }
+
+            /* Blue */
+        </style>
+        </head>
+
+        <body>
+
+            <h4>
+                <p>Change the background color of a button with the background-color property:</p>
+            </h4>
+
+            <button class="button button1">Green</button>
+            <button class="button button2">Blue</button>
+            <p><b>6. hr Element:-</b>The hr tag defines a thematic break in an HTML page <b>(e.g. a shift of
+                    topic),</b>The hr element is most often displayed as a horizontal line rule that is used to separate
+                content (or define a change) in an HTML page.
+            <p><b>Example:-</b>
+            <p>
+                <li>A normal horizontal line:
+            </p>
+            <hr>
+<textarea cols="50" rows="1" readonly>
+    <hr>This is how to use hr tag</hr>
+</textarea>
+            <p>
+                <li>With CSS:
+            </p>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+            <p><b>7. br Element:-</b>The br tag inserts a single line break,The br tag is useful for writing addresses
+                or poems.The br tag is an empty tag which means that it has no end tag.Use the br tag to enter line
+                breaks, not to add space between paragraphs.
+            <p><b>Example:-</b>
+            <h4>
+                <li>A Poem
+            </h4>
+
+            <p>Be not afraid of greatness.<br>
+                Some are born great,<br>
+                some achieve greatness,<br>
+                and others have greatness thrust upon them.</p>
+
+            <p><em>-William Shakespeare</em></p>
+<textarea cols="50" rows="7" readonly>
+    <p>This is how to use br tag,<br>
+       Be not afraid of greatness.<br>
+       Some are born great,<br>
+       some achieve greatness,<br>
+       and others have greatness thrust upon them.</p>
+
+</textarea>
+        </body>
+
+</html>
